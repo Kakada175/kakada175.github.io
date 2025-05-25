@@ -1,0 +1,237 @@
+.table-header {
+    background-color: rgb(71, 78, 216);
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+h1, h2{
+    color: #0fd1ef;
+    text-align: center;
+}
+.myhobby {
+    text-align: left;
+}
+#img{
+    width: 130px;
+    float: right;
+    margin: 0 0 0 15px;
+}
+/* Header/Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed; 
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+    box-sizing: border-box; 
+}
+.navbar .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #4a4a4a;
+}
+.navbar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navbar nav ul li {
+    margin-left: 30px; 
+}
+.navbar nav ul li a {
+    text-decoration: none;
+    color: #666;
+    font-weight: 600;
+    font-size: 0.95em;
+    transition: color 0.3s ease;
+}
+.navbar nav ul li a:hover {
+    color: #000;
+}
+.content-area {
+    padding-top: 70px; 
+    position: relative; 
+    width: 100%;
+    overflow: hidden; 
+}
+.full-width-image {
+    width: 100%;
+    height: auto;
+    display: block; 
+}
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+.image-container {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 40px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+.text-content {
+    flex: 2;
+    min-width: 300px;
+    padding-left: 20px;
+}
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #4a4a4a;
+    text-align: right;
+    margin-bottom: 10px;
+}
+.subtitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #666;
+    text-align: right;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.text-content p {
+    font-size: 1em;
+    color: #555;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+/* --- Hobbies Section Styles --- */
+.hobbies-section {
+    padding: 80px 20px; 
+    text-align: center; 
+    background-color: #f9f9f9; 
+    color: #333;
+}
+.hobbies-section h2 {
+    font-family: 'Playfair Display', serif; 
+    font-size: 2.8em;
+    margin-bottom: 60px; 
+    color: #4a4a4a;
+}
+.hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 30px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+.hobby-item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+}
+.hobby-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); 
+}
+.hobby-icon {
+    font-size: 3.5em; 
+    color: #007bff; 
+    margin-bottom: 20px;
+}
+.hobby-item h3 {
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 1.6em;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+}
+.hobby-item p {
+    font-size: 1.0em;
+    color: #666;
+    line-height: 1.5;
+}
+.schedule-section {
+    padding: 80px 20px;
+    background-color: #ffffff; 
+    text-align: center; 
+}
+.schedule-main-title {
+    font-family: 'Playfair Display', serif; 
+    font-size: 2.8em;
+    color: #4a4a4a;
+    margin-bottom: 60px;
+    color: #55acee; 
+}
+.table-container {
+    overflow-x: auto; 
+    max-width: 100%;
+    margin: 0 auto; 
+}
+.schedule-section table {
+    width: 100%; 
+    border-collapse: collapse; 
+    min-width: 700px; 
+    margin: 0 auto; 
+    font-family: 'Open Sans', sans-serif; 
+    border: 1px solid #ddd; 
+}
+.schedule-section th,
+.schedule-section td {
+    padding: 15px 10px; 
+    border: 1px solid #ddd; 
+    text-align: center; 
+}
+.schedule-section thead th {
+    background-color: #6a5acd;
+    color: #fff; 
+    font-weight: 600;
+    font-size: 1.1em;
+    white-space: nowrap; 
+}
+.schedule-section thead .time-col {
+    background-color: #6a5acd; 
+}
+.schedule-section tbody tr:nth-child(even) {
+    background-color: #f2f2f2; 
+}
+.schedule-section tbody tr:hover {
+    background-color: #e0e0e0; 
+}
+.schedule-section tbody .time-col {
+    font-weight: 600;
+    background-color: #6a5acd; 
+    color: #fff; 
+    font-size: 1em;
+}
+.schedule-section tbody td {
+    text-align: center; 
+    color: #444;
+}
