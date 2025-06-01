@@ -1,6 +1,17 @@
-.table-header {
-    background-color: rgb(71, 78, 216);
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+:root {
+    --main-color: #a800a8;
+    --black100: #f7f7f7;
+    --black400: #555555;
+    --black900: #000000;
+    --white: #ffffff;
+
+    --shadow-black100: 0 5px 15px rgba(0, 0, 0, .1);
+    --shadow-black300: 0 5px 15px rgba(0, 0, 0, .3);
+    --black-alpha100: 0 5px 15px rgba(0, 0, 0, .05);
 }
+
 body{
     font-family: Arial, Helvetica, sans-serif;
 
@@ -22,6 +33,10 @@ h1, h2{
     float: right;
     margin: 0 0 0 15px;
 }
+* { margin: 0; padding: 0; outline: none !important; }
+img { max-width: 100%; vertical-align: middle; }
+ul { list-style: none; margin: 0; padding: 0; }
+a, a:hover { text-decoration: none; }
 /* Header/Navbar Styles */
 .navbar {
     display: flex;
@@ -127,26 +142,26 @@ h1, h2{
     margin-bottom: 20px;
 }
 /* --- Hobbies Section Styles --- */
-.hobbies-section {
+.project-section {
     padding: 80px 20px; 
     text-align: center; 
     background-color: #f9f9f9; 
     color: #333;
 }
-.hobbies-section h2 {
+.project-section h2 {
     font-family: 'Playfair Display', serif; 
     font-size: 2.8em;
     margin-bottom: 60px; 
     color: #4a4a4a;
 }
-.hobbies-grid {
+.project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
     gap: 30px; 
     max-width: 1200px; 
     margin: 0 auto; 
 }
-.hobby-item {
+.project-item {
     background-color: #fff;
     padding: 30px;
     border-radius: 10px;
@@ -157,23 +172,23 @@ h1, h2{
     align-items: center; 
     text-align: center; 
 }
-.hobby-item:hover {
+.project-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); 
 }
-.hobby-icon {
+.project-icon {
     font-size: 3.5em; 
     color: #007bff; 
     margin-bottom: 20px;
 }
-.hobby-item h3 {
+.project-item h3 {
     font-family: 'Open Sans', sans-serif; 
     font-size: 1.6em;
     margin-top: 0;
     margin-bottom: 15px;
     color: #333;
 }
-.hobby-item p {
+.project-item p {
     font-size: 1.0em;
     color: #666;
     line-height: 1.5;
@@ -235,7 +250,63 @@ h1, h2{
     text-align: center; 
     color: #444;
 }
+/*CONTACT*/
 
+.contact { background-color: var(--shadow-black100); }
+.contact-info h3 { font-size: 22px; color: var(--black900); font-weight: 500; margin: 0 0 40px; }
+.contact-info-item { position: relative; padding-left: 55px; margin-bottom: 30px; }
+    .contact-info-item i {
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        left: 0;
+        top: 0;
+        border-radius: 50%;
+        font-size: 16px;
+        color: var(--main-color);
+        border: 1px solid var(--main-color);
+        text-align: center;
+        line-height: 38px;
+    }
+
+    .contact-info-item h4 { font-size: 18px; font-weight: 400; margin: 0 0 10px; color: var(--black900); }
+
+    .contact-info-item p {
+        font-size: 16px;
+        font-weight: 300;
+        margin: 0;
+        line-height: 26px;
+        color: var(--black400);
+    }
+
+.contact-form .form-group { margin-bottom: 25px; }
+.contact-form .form-control {
+    height: 52px;
+    border: 1px solid transparent;
+    box-shadow: var(--shadow-black100);
+    border-radius: 30px;
+    padding: 0 24px;
+    color: var(--black900);
+    background-color: var(--white);
+    transition: all .5s ease;
+}
+
+    .contact-form textarea.form-control { height: 140px; padding: 12px; resize: none; }
+    .contact-form .form-control:focus { border-color: var(--main-color); }
+
+
+/* FOOTER STYLE*/
+.footer {
+    background-color: var(--main-color);
+}
+.footer .copyright-text {
+    padding: 10px 0;
+    text-align: center;
+    font-size: 18px;
+    color: rgba(255, 255, 255, .9);
+    font-weight: 300;
+    margin: 10px 0 0;
+}
 /* -- --*/
 
 @media (max-width: 768px) {
