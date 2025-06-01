@@ -235,3 +235,160 @@ h1, h2{
     text-align: center; 
     color: #444;
 }
+
+/* -- --*/
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+    }
+
+    .navbar nav ul {
+        margin-top: 10px;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar nav ul li {
+        margin: 5px 0;
+    }
+    .about-section {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .image-container {
+        margin-right: 0; 
+        margin-bottom: 30px; 
+    }
+
+    .text-content {
+        padding-left: 0; 
+        text-align: center; 
+    }
+
+    .section-title,
+    .subtitle {
+        text-align: center; 
+    }
+.hobbies-section h2 {
+        font-size: 2.2em;
+        margin-bottom: 40px;
+    }
+
+    .hobbies-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+        gap: 20px;
+    }
+
+    .hobby-item {
+        padding: 25px;
+    }
+
+    .hobby-icon {
+        font-size: 3em;
+        margin-bottom: 15px;
+    }
+
+    .hobby-item h3 {
+        font-size: 1.4em;
+    }
+    .schedule-section {
+        padding: 60px 15px; 
+    }
+
+    .schedule-main-title {
+        font-size: 2.2em;
+        margin-bottom: 40px;
+    }
+    .schedule-section table {
+        min-width: 600px; 
+    }
+
+    .schedule-section th,
+    .schedule-section td {
+        padding: 12px 8px; 
+        font-size: 0.9em; 
+    }
+
+    .schedule-section thead .time-col,
+    .schedule-section tbody .time-col {
+        font-size: 0.95em; 
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar .logo {
+        font-size: 1.2em;
+    }
+    .about-section {
+        padding: 30px 15px; 
+    }
+
+    .section-title {
+        font-size: 2em;
+    }
+
+    .subtitle {
+        font-size: 1em;
+    }
+
+    .text-content p {
+        font-size: 0.9em;
+    }
+     .hobbies-section {
+        padding: 50px 15px;
+    }
+
+    .hobbies-section h2 {
+        font-size: 1.8em;
+        margin-bottom: 30px;
+    }
+
+    .hobbies-grid {
+        grid-template-columns: 1fr; 
+    }
+
+    .hobby-item {
+        padding: 20px;
+    }
+
+    .hobby-icon {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+    }
+
+    .hobby-item h3 {
+        font-size: 1.2em;
+    }
+
+    .hobby-item p {
+        font-size: 0.9em;
+    }
+    .schedule-section {
+        padding: 40px 10px;
+    }
+
+    .schedule-main-title {
+        font-size: 1.8em;
+        margin-bottom: 30px;
+    }
+
+    .schedule-section table {
+        min-width: 500px; 
+    }
+
+    .schedule-section th,
+    .schedule-section td {
+        padding: 10px 5px; 
+        font-size: 0.8em; 
+    }
+
+    .schedule-section thead .time-col,
+    .schedule-section tbody .time-col {
+        font-size: 0.9em;
+    }
+}
