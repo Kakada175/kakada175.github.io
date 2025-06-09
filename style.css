@@ -20,10 +20,11 @@ body{
     max-width: 1200px;
     width: 90%;
     margin: auto;
+    text-align: left;
 }
 h1, h2{
     color: #0fd1ef;
-    text-align: center;
+    /*text-align: center;*/
 }
 .myhobby {
     text-align: left;
@@ -37,6 +38,100 @@ h1, h2{
 img { max-width: 100%; vertical-align: middle; }
 ul { list-style: none; margin: 0; padding: 0; }
 a, a:hover { text-decoration: none; }
+/* Home */
+
+.home-text h4 { font-size: 30px; font-weight: 600; padding-bottom: 8px; color: var(--main-color); }
+.home-text h1 { font-size: 60px; font-weight: 600; padding-bottom: 8px; color: var(--black900); }
+.home-text p { font-size: 18px; line-height: 28px; color: var(--black900); font-weight: 300; padding-bottom: 30px; }
+
+.home-img::before {
+    position: absolute;
+    content: '';
+    width: 85%;
+    height: 82%;
+    border: 20px solid var(--main-color);
+    border-bottom: none;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.home-img::after {
+    position: absolute;
+    content: '';
+    width: 85%;
+    height: 20px;
+    background-color: var(--main-color);
+    bottom: 50px;
+    left: 0;
+    z-index: 11;
+}
+
+.home-img img { position: relative; z-index: 5; }
+.header-social { position: absolute; bottom: 30px; left: 15px; width: 100%; }
+    .header-social .header-social-icon { position: relative; }
+
+        .header-social .header-social-icon::before {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 2px;
+            background-color: var(--main-color);
+            left: -102.5%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .header-social .header-social-icon ul li { display: inline-block; margin-left: 13px; }
+            .header-social .header-social-icon ul li:first-child { margin-left: 0; }
+
+            .header-social .header-social-icon ul li a {
+                color: #0f0e0e;
+                font-size: 20px;
+                width: 40px;
+                height: 40px;
+                display: inline-block;
+                line-height: 40px;
+                border-radius: 50%;
+                border: 1px solid #0f0e0e;
+                text-align: center;
+                transition: all .3s ease-out 0s;
+            }
+
+                .header-social .header-social-icon ul li a:hover { color: var(--black900); background-color: var(--main-color); background-color: var(--main-color); }
+
+/* Showcase styling*/
+.showcase-area {
+    height: 100vh;
+    background: linear-gradient(rgba(240, 240, 240, 0.144),
+            rgba(255, 255, 255, 0.336)),
+        url("./img/background1.jpg");
+        background-position: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.showcase-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    height: 100%;
+    font-size: 1.6rem;
+    row-gap: 20px;
+}
+
+.main-title {
+    text-transform: uppercase;
+    margin-top: 1.5em;
+    font-size: 4rem;
+    color: chocolate;
+}
+
+.showcase-container p{
+    color: black;
+}
 /* Header/Navbar Styles */
 .navbar {
     display: flex;
