@@ -2,234 +2,80 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/magnific-popup.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
-        <meta name="viewport" content="width= device-width, initial-scale= 1.0">
-        <title>Portfolio</title>
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <title>Testing Website</title>
+        <style>
+            header {
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+               padding: 1rem;
+               background-color: #0cc9ea;
+               color: #ffffff;
+            }
+            .nav-bar{
+                text-align: right;
+                margin: 20px;
+            }
+            .nav-bar ul {
+               list-style: none;
+               display: flex;
+               gap: 50px;
+            }
+            .nav-bar ul li a {
+               text-decoration: none;
+               color: #ffffff;
+               font-weight: bold;
+               transition: color 0.3s;
+               float: right;
+            }
+            .nav-bar ul li a:hover {
+               color: #ff7200;
+            }
+        </style>
     </head>
     <body>
-        <header class="navbar">
-        <div class="logo">Kakada's Portfolio</div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#project">Projects</a></li>
-                <li><a href="#skill">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+        <header>
+            <nav class="nav-bar">
+                <ul>
+                   <li><a href="about-me.html">About Me</a></li>
             </ul>
-        </nav>
-        <!---HOME-->
-    </header>
-    <section class="showcase-area" id="home">
-        <div class="showcase-container">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="home-text ">
-                            <h4>HELLO, I'M</h4>
-                            <h1>KAKADA CHHEM</h1>
-                            <p>A junior student at Royal University of Phnom Penh.</p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="header-social">
+            </nav>
+            
+            
+        </header>
+        <h1>Welcome to my website</h1>        
+        <p>This is a static website.</p>
+        <img src="./img/flower1.webp" alt="Flower1">
+        <p>Flowers are nature’s artwork. <br> mean to see the color combination, each petal like a brushstroke, painted with such precision and care. <br>I am reminded of how beautiful it is when I look at a flower.</p>
+        <!--<a href="about-me.html">About Me</a>-->
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+        </ul>
+        <ol>
+            <li>Home</li>
+            <li>About</li>
+            <li>FQA</li>
+            <li>Contact</li>
+        </ol>
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="header-social-icon">
-                            <ul>
-                            <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <span>This is inline text.</span>
         </div>
-        
-  </section>
-    <!--ABOUT ME-->
-    <section class="about-section" id="about-me">
-        <div class="image-container">
-            <img src="./img/flower1.webp" alt="flower" class="about-image">
-        </div>
-        <div class="text-content">
-            <h1 class="section-title">About Me</h1>
-            <h2>I'm kakada, a junior student at Royal University of Phnom Penh(RUPP) majoring in Computer Science and Engineering.</h2>
-            <p>I am a passionate web designer with a love for creating beautiful and functional websites. I enjoy working with HTML, CSS, and JavaScript to bring ideas to life and enhance user experiences. In my free time, I like to explore new design trends and work on personal projects that challenge my creativity</p>
-        </div>
-    </section>
-    <!--PROJECT-->
-    <section id="project" class="project-section">
-    <h2>My Projects</h2>
-
-    <div class="project-grid">
-        <div class="project-item">
-            <div class="project-icon">
-                <i class="fas fa-camera"></i>
-                </div>
-            <h3>Practice coding or research lesson.</h3>
-            <p>Regularly engage in coding exercises to strengthen my logical thinking, optimize code efficiency, and stay updated with best practices in [mention a domain, e.g., web development, data structures].</p>
-        </div>
-
-        <div class="project-item">
-            <div class="project-icon">
-                <i class="fas fa-code"></i>
-            </div>
-            <h3>Drawing</h3>
-            <p>Using drawing as a fundamental tool for quickly visualizing ideas and refining concepts, valuable for design thinking and user experience exploration.</p>
-        </div>
-
-        <div class="project-item">
-            <div class="project-icon">
-                <i class="fas fa-dumbbell"></i>
-            </div>
-            <h3>Watch movies </h3>
-            <p>A keen interest in films of all genres, appreciating the artistry, storytelling, and creative execution behind compelling visuals.</p>
-        </div>
-
-        <div class="project-item">
-            <div class="project-icon">
-                <i class="fas fa-book-reader"></i>
-            </div>
-            <h3>Reading</h3>
-            <p>Devouring non-fiction, especially on history and technology. Broadens my knowledge and critical thinking.</p>
-        </div>
-
-        </div>
-    </section>
-    <!--SKILLS-->
-    <section id="schedule" class="schedule-section">
-    <h2 class="schedule-main-title">My Schedule</h2>
-
-    <div class="table-container">
-        <table>
-            <thead>
-                <tr>
-                    <th class="time-col">Time</th>
-                    <th>Monday</th>
-                    <th>Tuesday</th>
-                    <th>Wednesday</th>
-                    <th>Thursday</th>
-                    <th>Friday</th>
-                    <th>Saturday</th>
-                    <th>Sunday</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="time-col">7:30 - 9:00</td>
-                    <td>.NET Programming</td>
-                    <td>Information System Analyze Design and Development</td>
-                    <td>Computer Network</td>
-                    <td>.NET Programming</td>
-                    <td>Information System Analyze Design and Development</td>
-                    <td>Holiday</td>
-                    <td>Sister of code class</td>
-                </tr>
-                <tr>
-                    <td class="time-col">9:30 - 11:00</td>
-                    <td>Web Application</td>
-                    <td>Computer Network</td>
-                    <td>Data Analysis</td>
-                    <td>Web Application</td>
-                    <td>Data Analysis</td>
-                    <td>Holiday</td>
-                    <td>Sister of code class</td>
-                </tr>
-                </tbody>
+        <table border="1" width="350px" cellspacing="1" cellpadding="1">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+            </tr>
+            <tr>
+                <td>Diana</td>
+                <td>21</td>
+                <td>Female</td>
+            </tr>
         </table>
-    </div>
-    </section>
-    <!--CONTACT-->
-    <section class="contact section-padding"  id="contact">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title">
-                        <h1>Contact Us</h1>
-                        <h2>Get <span>in touch</span></h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-5">
-                <div class="contact-info">
-                    <h3>Feel free to reach out to me at</h3>
-                    <div class="contact-info-item">
-                        <i class="fa-solid fa-envelope"></i>
-                        <h4>Write to me at</h4>
-                        <p>kakadachhem.01072005@gmail.com</p>
-                    </div>
-                    <div class="contact-info-item">
-                        <i class="fa-solid fa-location-arrow"></i>
-                        <h4>Call me on</h4>
-                        <p>+855 89728499</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-8 col-md-7">
-                    <div class="contact-form">
-                        <form action="">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <input type="text" placeholder="Your Name" class="form-control" id="name">
-                                    </div>
-                                </div>
 
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <input type="email" placeholder="Your Email" class="form-control" id="email">
-                                    </div>
-                                </div>
-                                
-                            </div>
 
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <input type="text" placeholder="Your Phone" class="form-control" id="Phone">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <textarea name="" id="" placeholder="Your Message" class="form-control" id="message"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <button class="btn-2">Summit</button>
-                                </div>
-                            </div>
-                        </form>
-                        
-                    </div>
-                </div>
-        </div>
-    </section>
-    <!--FOOTER-->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="copyright-text">&copy; 2025 by KAKADA CHHEM</p>
-                </div>
-            </div>
-        </div>
-    </footer>
     </body>
 </html>
