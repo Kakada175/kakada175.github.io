@@ -3,10 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KAKADA CHHEM Portfolio</title>
-    <meta name="description" content="Discover the developer portfolio of Chhem Kakada — showcasing web apps, desktop projects, and UI design powered by HTML, CSS, and JavaScript.">
-    <meta name="keyword" content="Portfolio website using HTML, CSS, and JavaScript">
-    <meta name="author" content="Kakada">
+    <title>KAKADA CHHEM - Portfolio</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="style.css">
@@ -15,15 +12,15 @@
 </head>
 <body>
     <header class="header-area">
-        <nav class="navbar navbar-expand-lg fixed-top">
+        <nav class="navbar navbar-expand-lg fixed-top py-3">
             <div class="container">
-                <a href="#index.html" class="navbar-brand">Portfolio</a>
+                <a href="#index.html" class="navbar-brand">Kakada Chhem</a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"><i class="fa-solid fa-bars"></i></button>
 
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a href="#home" class="nav-link active" data-scroll-nav="0">home</a></li>
+                        <li class="nav-item"><a href="#home" class="nav-link " data-scroll-nav="0">home</a></li>
                         <li class="nav-item"><a href="#about" class="nav-link " data-scroll-nav="1">about</a></li>
                         <li class="nav-item"><a href="#project" class="nav-link " data-scroll-nav="2">projects</a></li>
                         <li class="nav-item"><a href="#skill" class="nav-link " data-scroll-nav="3">skills</a></li>
@@ -89,7 +86,7 @@
 
                         <div class="col-lg-6">
                             <div class="home-img d-none d-lg-block">
-                                <img src="./img/portfoliologo.png" alt="KAKADA CHHEM">
+                                <img src="./images/profile.jpg" alt="KAKADA CHHEM">
                             </div>
                         </div>
                     </div>
@@ -133,91 +130,77 @@
                     </div>
                 </div>
                 <div>
-                    <img src="./img/profile.jpg" alt="profile">
+                    <img src="./images/profile.jpg" alt="profile">
                 </div>
             </div>
         </div>
     </section>
 <!--PROJECTS-->
-    <section class="projects section-padding" id="project" data-scroll-index="2">
+    
+    <section class="projects section-padding bg-light py-5" id="project" data-scroll-index="2">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
                     <div class="section-title">
-                        <h4>Projects</h4>
-                        <h2>Projects <span>that I can provide for you</span></h2>
+                        <h4 class="text-muted text-uppercase">Projects</h4>
+                        <h2 class="display-4 font-weight-bold">Projects <span>that I can provide for you</span></h2>
                     </div>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="project-item">
-                        <img src="./img/Exchangeratecalculater.png" alt="Exchangeratecalculater Projects">
-                        <h3>Exchangeratecalculater</h3>
-                        <p> An Exchange Rate App that allows users to convert currencies in real-time using up-to-date exchange rates.</p>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm project-item">
+                        <img src="./images/restaurant.png" class="card-img-top" alt="Restaurant Website">
+                        <div class="card-body">
+                            <h3 class="card-title h5 font-weight-bold">Restaurant Website</h3>
+                            <p class="card-text text-muted">The restaurant website designed to showcase a dining establishment’s menu, services, and ambiance. Built with HTML, CSS, and JavaScript, the site features a clean, modern layout with sections for food galleries, customer reviews, contact details, and an interactive reservation form. Check out the live demo and code on GitHub.</p>
+                            <a href="https://kakada175.github.io/Restaurant.github.io/" class="btn-2  btn-sm mt-2">See More</a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6">
-                    <div class="project-item">
-                        <img src="./img/weatherapp.png" alt="weatherapp Projects">
-                        <h3>Weather App</h3>
-                        <p> weather app creation project that will empower users to access weather information for any city. The process will involve the user inputting the city name into an input field and clicking a button or pressing enter to retrieve the weather data.</p>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm project-item">
+                        <img src="./images/netflex.png" class="card-img-top" alt="Netflix Website">
+                        <div class="card-body">
+                            <h3 class="card-title h5 font-weight-bold">Netflix Website</h3>
+                            <p class="card-text text-muted">The interface mimics Netflix's sleek design, featuring categorized content rows, trailers, and a personalized recommendation system. This clone serves as a practical demonstration of frontend development skills and API integration. Explore the code and demo on GitHub.</p>
+                            <a href="https://kakada175.github.io/Netflix/" class="btn-2  btn-sm mt-2">See More</a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6">
-                    <div class="project-item">
-                        <img src="./img/calendarapp.png" alt="Calendar Projects">
-                        <h3>Calendar</h3>
-                        <p>The calendar includes a header displaying the current month and date, all dates of the month from 1 to 30, and accurately reflects today's date. Everything is dynamically generated and automatically updates based on the current date and month.</p>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm project-item">
+                        <img src="./images/skincare.png" class="card-img-top" alt="Skincare Website">
+                        <div class="card-body">
+                            <h3 class="card-title h5 font-weight-bold">Skincare Website</h3>
+                            <p class="card-text text-muted">The e-commerce site designed for a skincare brand, built with HTML, CSS, and JavaScript. The website features product displays, a shopping cart, customer testimonials, and a contact section. It showcases frontend development skills in UI design, DOM manipulation, and interactive elements. Explore the live demo and code on GitHub Pages.</p>
+                            <a href="https://kakada175.github.io/SkincareWebsite/" class="btn-2  btn-sm mt-2">See More</a>
+                        </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
-
 <!--SKILLS-->
-    <section class="img-gallery section-padding" id="skill" data-scroll-index="3">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title">
-                        <h4>Skills</h4>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-6 col-xl-5 offset-xl-1">
-                    <div id="skill-bar-wrapper">
-                        <div class="text-left">
-                            <h4>C++ <span style="float: right;">95%</span></h4>
-                            <div class="skillbar-container" data-percent="95%">
-                        </div>
-
-                            <h4>Java <span style="float: right;">85%</span></h4>
-                            <div class="skillbar-container" data-percent="85%">
-                            </div>
-
-                            <h4>HTML <span style="float: right;">75%</span></h4>
-                            <div class="skillbar-container" data-percent="75%">
-                            </div>
-
-                            <h4>css <span style="float: right;">80%</span></h4>
-                            <div class="skillbar-container" data-percent="80%">
-                            </div>
-
-                            <h4>Javascript <span style="float: right;">85%</span></h4>
-                            <div class="skillbar-container" data-percent="85%">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <section class="skills-section" id="skill" data-scroll-index="3">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-tag"><i class="fa-brands fa-html5"></i>HTML</div>
+            <div class="skill-tag"><i class="fa-brands fa-css3-alt"></i>CSS</div>
+            <div class="skill-tag"><i class="fa-brands fa-java"></i>JAVA</div>
+            <div class="skill-tag"><i class="fa-brands fa-php"></i>PHP</div>
+            <div class="skill-tag"><i class="fa-solid fa-database"></i>MYSQL</div>
+            <div class="skill-tag"><i class="fa-brands fa-docker"></i>DOCKER</div>
+            <div class="skill-tag"><i class="fa-brands fa-js"></i>JAVASCRIPT</div>
+            <div class="skill-tag"><i class="fa-brands fa-react"></i>REACT.JS</div>
+            <div class="skill-tag"><i class="fa-brands fa-laravel"></i>LARAVEL</div>
+            <div class="skill-tag"><i class="fa-brands fa-bootstrap"></i>BOOTSTRAP</div>
         </div>
     </section>
-
+    
 <!--CONTACT-->
     <section class="contact section-padding" id="contact" data-scroll-index="6">
         <div class="container">
@@ -296,6 +279,7 @@
         </div>
     </section>
 
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
             <div class="row">

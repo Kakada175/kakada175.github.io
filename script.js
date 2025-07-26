@@ -102,24 +102,15 @@ $(document).ready(function() {
 
   parallaxMouse();
 
-  //skills meter
+  //skills
+  $(document).ready(function(){
+    // Initialize all popovers on the page
+    $('[data-toggle="popover"]').popover({
+        trigger: 'hover' // Show on hover
+    });
+});
 
-
-  $(window).scroll(function(){
-    var hT = $("#skill-bar-wrapper").offset().top;
-    var hH = $("#skill-bar-wrapper").outerHeight();
-    var wH = $(window).height();
-    var wS = $(this).scrollTop();
-
-    if( wS > (hT + hH - 1.4 * wH)){
-        jQuery('.skillbar-container').each(function(){
-            jQuery(this).find('.skills').animate({
-                width:jQuery(this).attr('data-percent')
-            }, 5000)
-        })
-    }
-})
-
+    
 //filter
 ///enabling active button
 let $btns = $('.img-gallery .sortBtn .filter-btn');
